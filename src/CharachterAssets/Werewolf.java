@@ -19,7 +19,9 @@ public class Werewolf extends HorrorCharacter implements Transformable
     public void attack()
     {
         if (transformed)
-            System.out.println("CharachterAssets.Werewolf claws through one of its victims");
+            System.out.println("Werewolf claws through one of its victims");
+        else
+            System.out.println("could not attack");
     }
 
     @Override

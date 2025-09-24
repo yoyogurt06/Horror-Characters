@@ -21,10 +21,11 @@ public class Demo
         String name = scanner.next();
 
 
-        while (choice != 4)
+        while (choice != 6)
         {
-            System.out.println("please choose your character:\n" +
-                    "1. Zombie\n"+"2. Werewolf\n"+"3. Vampire\n4. Quit");
+            System.out.println("please choose your action:\n" +
+                    "1. Zombie\n"+"2. Werewolf\n"+"3. Vampire\n4. view Characters\n5. view Transformable characters" +
+                    "\n6. quit");
 
             choice = scanner.nextInt();
             switch (choice)
@@ -33,6 +34,7 @@ public class Demo
                     Zombie zombie = new Zombie(name,DEFAULT_HEALTH_ZOMBIE);
                     characters.add(zombie);
                     int zombieAction = 0;
+
                     while (zombieAction != 2)
                     {
                         System.out.println("choose what you want to do as a zombie:\n" +
@@ -47,10 +49,53 @@ public class Demo
                     break;
                 case 2:
                     Werewolf werewolf = new Werewolf(name,DEFAULT_HEALTH_WEREWOLF);
+                    characters.add(werewolf);
+                    transformableCharacters.add(werewolf);
+                    int wolfAction = 0;
+
+                    while (wolfAction != 3)
+                    {
+                        System.out.println("choose what you want to do as a werewolf:\n" +
+                                "1. transform\n2. attack\n3. flee");
+                        wolfAction = scanner.nextInt();
+
+                        if (wolfAction == 1)
+                            werewolf.transform();
+                        else if (wolfAction == 2)
+                            werewolf.attack();
+                        else
+                            werewolf.flee();
+                    }
                     break;
                 case 3:
                     Vampire vampire = new Vampire(name,DEFAULT_HEALTH_VAMPIRE);
+                    characters.add(vampire);
+                    transformableCharacters.add(vampire);
+                    int vampAction = 0;
+
+                    while (vampAction != 3)
+                    {
+                        System.out.println("choose what you want to do as a werewolf:\n" +
+                                "1. transform\n2. attack\n3. flee");
+                        vampAction = scanner.nextInt();
+
+                        if (vampAction == 1)
+                            vampire.transform();
+                        else if (vampAction == 2)
+                            vampire.attack();
+                        else
+                            vampire.flee();
+                    }
+                    break;
                 case 4:
+                    System.out.println("showing general character array");
+                    {
+                        System.out.println();
+                    }
+                    break;
+                case 5:
+                    break;
+                case 6:
                     break;
                 //end of switch
             }
