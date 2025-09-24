@@ -1,10 +1,7 @@
 import java.util.ArrayList;
 import java.util.Scanner;
 
-import CharachterAssets.HorrorCharacter;
-import CharachterAssets.Vampire;
-import CharachterAssets.Werewolf;
-import CharachterAssets.Zombie;
+import CharachterAssets.*;
 
 public class Demo
 {
@@ -17,6 +14,7 @@ public class Demo
         int choice = 0;
 
         ArrayList<HorrorCharacter> characters = new ArrayList<>();
+        ArrayList<Transformable> transformableCharacters = new ArrayList<>();
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("please enter your name:");

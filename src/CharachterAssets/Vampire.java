@@ -19,6 +19,8 @@ public class Vampire extends HorrorCharacter implements Transformable
     {
         if(transformed)
             System.out.println("vampire sinks it's teeth into it's victim");
+        else
+            System.out.println("could not attack");
     }
 
     @Override
