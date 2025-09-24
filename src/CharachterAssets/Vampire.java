@@ -1,3 +1,5 @@
+package CharachterAssets;
+
 public class Vampire extends HorrorCharacter implements Transformable
 {
     private boolean transformed;

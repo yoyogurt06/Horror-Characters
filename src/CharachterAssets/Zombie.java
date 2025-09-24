@@ -1,3 +1,5 @@
+package CharachterAssets;
+
 public class Zombie extends HorrorCharacter
 {
     public Zombie(String name, int health)
