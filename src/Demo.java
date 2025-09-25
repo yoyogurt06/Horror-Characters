@@ -89,13 +89,16 @@ public class Demo
                     break;
                 case 4:
                     System.out.println("showing general character array");
+                    for (HorrorCharacter character :characters)
                     {
-                        System.out.println();
+                        System.out.println(character.getName()+character.getHealth());
                     }
                     break;
                 case 5:
+                    //write action that list only characters that are transformable
                     break;
                 case 6:
+                    System.out.println("You quit the program");
                     break;
                 //end of switch
             }
