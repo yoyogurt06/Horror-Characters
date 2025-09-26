@@ -1,6 +1,6 @@
 package CharachterAssets;
 
-public class HorrorCharacter
+public abstract class HorrorCharacter
     {
         Vulnerability[] vulnerabilities;
 
