@@ -18,6 +18,7 @@ public abstract class HorrorCharacter
         public void setName(String name)
         {
             if(!name.isEmpty())
+
                 this.name = name;
         }
 
