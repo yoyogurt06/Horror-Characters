@@ -33,8 +33,13 @@ public class Werewolf extends HorrorCharacter implements Transformable
     @Override
     public void transform()
     {
-        transformed = true;
-        System.out.println("transformed into a werewolf");
+        if (!transformed)
+        {
+            System.out.println("transformed into a werewolf");
+            transformed = true;
+        }
+        else
+            System.out.println("already transformed");
     }
 }
 

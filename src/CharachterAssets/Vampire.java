@@ -32,7 +32,11 @@ public class Vampire extends HorrorCharacter implements Transformable
     @Override
     public void transform()
     {
-        transformed = true;
-        System.out.println("transformed into a vampire");
+        if (!transformed)
+        {
+            System.out.println("transformed into a vampire");
+            transformed = true;
+        }
+        System.out.println("already transformed");
     }
 }

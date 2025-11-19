@@ -95,7 +95,10 @@ public class Demo
                     }
                     break;
                 case 5:
-                    //write action that list only characters that are transformable
+                    for (Transformable character: transformableCharacters)
+                    {
+                        character.transform();
+                    }
                     break;
                 case 6:
                     System.out.println("You quit the program");
