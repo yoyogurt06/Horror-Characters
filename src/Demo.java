@@ -24,7 +24,7 @@ public class Demo
         while (choice != 6)
         {
             System.out.println("please choose your action:\n" +
-                    "1. Zombie\n"+"2. Werewolf\n"+"3. Vampire\n4. view Characters\n5. view Transformable characters" +
+                    "1. Zombie\n"+"2. Werewolf\n"+"3. Vampire\n4. view Characters\n5. Transform all characters" +
                     "\n6. quit");
 
             choice = scanner.nextInt();

@@ -14,6 +14,7 @@ public class Vampire extends HorrorCharacter implements Transformable
         vulnerabilities = new Vulnerability[]{Vulnerability.holy_water, Vulnerability.sunlight};
     }
 
+    /**This is an attack method that prints out the actions of the vampire*/
     @Override
     public void attack()
     {
@@ -23,12 +24,14 @@ public class Vampire extends HorrorCharacter implements Transformable
             System.out.println("could not attack");
     }
 
+    /**This is an flee method that prints out the actions of the vampire*/
     @Override
     public void flee()
     {
         System.out.println("vampire flees from the scene");
     }
 
+    /**This is a transform method that prints out the actions of the vampire*/
     @Override
     public void transform()
     {
