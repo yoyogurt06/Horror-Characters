@@ -8,7 +8,7 @@ public abstract class HorrorCharacter
         /**Name of creature*/
         private String name;
 
-        /**Amount of Health an enum has*/
+        /**Amount of Health a character has*/
         private int health;
 
 
@@ -39,9 +39,9 @@ public abstract class HorrorCharacter
             this.health = health;
         }
 
-        /**This is an abstract method that is meant to be inherited*/
+        /**This is an abstract method that is meant to be inherited, intended to display the attack of a character*/
         public void attack(){}
 
-        /**This is an abstract method that is meant to be inherited*/
+        /**This is an abstract method that is meant to be inherited, intended to display the flee method of a character*/
         public void flee(){}
     }

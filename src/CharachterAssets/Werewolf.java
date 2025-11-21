@@ -15,6 +15,7 @@ public class Werewolf extends HorrorCharacter implements Transformable
         transformed = false;
     }
 
+    /**Displays the attack action through the terminal, but if werewolf isn't transformed, it will not attack*/
     @Override
     public void attack()
     {
@@ -24,12 +25,14 @@ public class Werewolf extends HorrorCharacter implements Transformable
             System.out.println("could not attack");
     }
 
+    /**displays the flee action through the terminal*/
     @Override
     public void flee()
     {
         System.out.println("werewolf flees from the scene");
     }
 
+    /**displays the transformation of the werewolf through the terminal*/
     @Override
     public void transform()
     {

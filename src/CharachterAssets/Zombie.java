@@ -9,12 +9,14 @@ public class Zombie extends HorrorCharacter
         vulnerabilities = new Vulnerability[]{Vulnerability.fire, Vulnerability.sunlight};
     }
 
+    /**Displays the attack of the zombie through the terminal*/
     @Override
     public void attack()
     {
         System.out.println("zombie bites into the brains of its victim");
     }
 
+    /**Displays the flee action of the zombie through the terminal*/
     @Override
     public void flee()
     {
